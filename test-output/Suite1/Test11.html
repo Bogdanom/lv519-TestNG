@@ -1,0 +1,564 @@
+<html>
+<head>
+<title>TestNG:  Test11</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test11</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 04 17:15:39 EEST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (363 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascal_6()'><b>matrixPascal_6</b><br>Test class: tasks_tests.CreateMatrixTask555Test<br>Parameters: 3, [I@7fd50002</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascalZero()'><b>matrixPascalZero</b><br>Test class: tasks_tests.CreateMatrixTask555Test</td>
+<td><div><pre>java.lang.IllegalArgumentException: Invalid argument
+	at task555.CreateMatrix.matrix(CreateMatrix.java:6)
+	at tasks_tests.CreateMatrixTask555Test.matrixPascalZero(CreateMatrixTask555Test.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace138776324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace138776324'><pre>java.lang.IllegalArgumentException: Invalid argument
+	at task555.CreateMatrix.matrix(CreateMatrix.java:6)
+	at tasks_tests.CreateMatrixTask555Test.matrixPascalZero(CreateMatrixTask555Test.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.sumNumbersZeroN1()'><b>sumNumbersZeroN1</b><br>Test class: tasks_tests.SumFingersTask87Test</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: begin 3, end 1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersZeroN1(SumFingersTask87Test.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961002599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961002599'><pre>java.lang.StringIndexOutOfBoundsException: begin 3, end 1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersZeroN1(SumFingersTask87Test.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.CalcQuantityTask178bTest.testNumberFigures()'><b>testNumberFigures</b><br>Test class: tasks_tests.CalcQuantityTask178bTest<br>Parameters: -4, 15, 19, 0, 123, 1</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CalcQuantityTask178bTest@22e357dc</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.testSumNumbers()'><b>testSumNumbers</b><br>Test class: tasks_tests.SumFingersTask87Test<br>Parameters: 31456, 3, 15</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.testSumNumbersZeroM()'><b>testSumNumbersZeroM</b><br>Test class: tasks_tests.SumFingersTask87Test<br>Parameters: 1, 0</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.CalcQuantityTask178bTest.testNumberFigures()'><b>testNumberFigures</b><br>Test class: tasks_tests.CalcQuantityTask178bTest<br>Parameters: 9, 27, 111, 9, -27, 5</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CalcQuantityTask178bTest@22e357dc</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascal_6()'><b>matrixPascal_6</b><br>Test class: tasks_tests.CreateMatrixTask555Test<br>Parameters: 5, [I@28dcca0c</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascalOne()'><b>matrixPascalOne</b><br>Test class: tasks_tests.CreateMatrixTask555Test</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.CalcQuantityTask178bTest.testNumberFigures()'><b>testNumberFigures</b><br>Test class: tasks_tests.CalcQuantityTask178bTest<br>Parameters: 0, 11, -18, 0, 123, 2</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CalcQuantityTask178bTest@22e357dc</td></tr>
+<tr>
+<td title='tasks_tests.CalcQuantityTask178bTest.testNumberFigures()'><b>testNumberFigures</b><br>Test class: tasks_tests.CalcQuantityTask178bTest<br>Parameters: 11, 11, 11, 112, 0, 0</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CalcQuantityTask178bTest@22e357dc</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascal_6()'><b>matrixPascal_6</b><br>Test class: tasks_tests.CreateMatrixTask555Test<br>Parameters: 1, [I@45d84a20</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascal_6()'><b>matrixPascal_6</b><br>Test class: tasks_tests.CreateMatrixTask555Test<br>Parameters: 6, [I@52f27fbd</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.sumNumbersZeroN()'><b>sumNumbersZeroN</b><br>Test class: tasks_tests.SumFingersTask87Test</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: begin -1, end 1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersZeroN(SumFingersTask87Test.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959910454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959910454'><pre>java.lang.StringIndexOutOfBoundsException: begin -1, end 1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersZeroN(SumFingersTask87Test.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.testSumNumbers()'><b>testSumNumbers</b><br>Test class: tasks_tests.SumFingersTask87Test<br>Parameters: 1, 1, 1</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.sumNumbersNegativeN()'><b>sumNumbersNegativeN</b><br>Test class: tasks_tests.SumFingersTask87Test</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;-&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:642)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at task87.SumFingers.calculateSum(SumFingers.java:15)
+	at task87.SumFingers.sumNumbers(SumFingers.java:8)
+	at tasks_tests.SumFingersTask87Test.sumNumbersNegativeN(SumFingersTask87Test.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace539690370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace539690370'><pre>java.lang.NumberFormatException: For input string: &quot;-&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:642)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at task87.SumFingers.calculateSum(SumFingers.java:15)
+	at task87.SumFingers.sumNumbers(SumFingers.java:8)
+	at tasks_tests.SumFingersTask87Test.sumNumbersNegativeN(SumFingersTask87Test.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='example_tests.ExceptionTest.f()'><b>f</b><br>Test class: example_tests.ExceptionTest</td>
+<td><div><pre>java.lang.ArithmeticException: / by zero
+	at example_tests.ExceptionTest.f(ExceptionTest.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4766562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4766562'><pre>java.lang.ArithmeticException: / by zero
+	at example_tests.ExceptionTest.f(ExceptionTest.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>example_tests.ExceptionTest@49912c99</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.testSumNumbers()'><b>testSumNumbers</b><br>Test class: tasks_tests.SumFingersTask87Test<br>Parameters: 2147483647, 4, 20</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.CalcQuantityTask178bTest.testNumberFigures()'><b>testNumberFigures</b><br>Test class: tasks_tests.CalcQuantityTask178bTest<br>Parameters: 10, 20, 51, 5, 100, 1</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CalcQuantityTask178bTest@22e357dc</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.sumNumbersMGreaterN()'><b>sumNumbersMGreaterN</b><br>Test class: tasks_tests.SumFingersTask87Test</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: begin -1, end 6, length 6
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersMGreaterN(SumFingersTask87Test.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292641216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292641216'><pre>java.lang.StringIndexOutOfBoundsException: begin -1, end 6, length 6
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersMGreaterN(SumFingersTask87Test.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascal_6()'><b>matrixPascal_6</b><br>Test class: tasks_tests.CreateMatrixTask555Test<br>Parameters: 4, [I@4c163e3</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascal_6()'><b>matrixPascal_6</b><br>Test class: tasks_tests.CreateMatrixTask555Test<br>Parameters: 2, [I@4a8355dd</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.testSumNumbersZeroM()'><b>testSumNumbersZeroM</b><br>Test class: tasks_tests.SumFingersTask87Test<br>Parameters: -1, 0</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.CreateMatrixTask555Test.matrixPascalNegative()'><b>matrixPascalNegative</b><br>Test class: tasks_tests.CreateMatrixTask555Test</td>
+<td><div><pre>java.lang.IllegalArgumentException: Invalid argument
+	at task555.CreateMatrix.matrix(CreateMatrix.java:6)
+	at tasks_tests.CreateMatrixTask555Test.matrixPascalNegative(CreateMatrixTask555Test.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace151593342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace151593342'><pre>java.lang.IllegalArgumentException: Invalid argument
+	at task555.CreateMatrix.matrix(CreateMatrix.java:6)
+	at tasks_tests.CreateMatrixTask555Test.matrixPascalNegative(CreateMatrixTask555Test.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.CreateMatrixTask555Test@702b8b12</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.sumNumbersNegativeN2()'><b>sumNumbersNegativeN2</b><br>Test class: tasks_tests.SumFingersTask87Test</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: begin 4, end 2, length 2
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersNegativeN2(SumFingersTask87Test.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540325452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540325452'><pre>java.lang.StringIndexOutOfBoundsException: begin 4, end 2, length 2
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersNegativeN2(SumFingersTask87Test.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.sumNumbersNegativeN1()'><b>sumNumbersNegativeN1</b><br>Test class: tasks_tests.SumFingersTask87Test</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: begin 3, end 1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersNegativeN1(SumFingersTask87Test.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace480490520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace480490520'><pre>java.lang.StringIndexOutOfBoundsException: begin 3, end 1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at task87.SumFingers.sumNumbers(SumFingers.java:7)
+	at tasks_tests.SumFingersTask87Test.sumNumbersNegativeN1(SumFingersTask87Test.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+<tr>
+<td title='tasks_tests.SumFingersTask87Test.testSumNumbersZeroM()'><b>testSumNumbersZeroM</b><br>Test class: tasks_tests.SumFingersTask87Test<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>tasks_tests.SumFingersTask87Test@693fe6c9</td></tr>
+</table><p>
+</body>
+</html>
