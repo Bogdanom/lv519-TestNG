@@ -39,7 +39,7 @@ public class TwoNumbers {
 	}
 
 	public static void write(int sum) {
-		System.out.print("Sum of the last m fingers of number n = ");
+		System.out.print("Sum of the last M fingers of number N = ");
 		System.out.println(sum);
 	}
 

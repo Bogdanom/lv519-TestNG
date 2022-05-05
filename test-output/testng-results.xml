@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-05T12:49:45 EEST" name="Suite4" finished-at="2022-05-05T12:49:45 EEST" duration-ms="131">
+    <groups>
+    </groups>
+    <test started-at="2022-05-05T12:49:45 EEST" name="Test41" finished-at="2022-05-05T12:49:45 EEST" duration-ms="131">
+      <class name="example_tests.TestNGTestParam">
+        <test-method is-config="true" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:example_tests.TestNGTestParam@3d1cfad4]" started-at="2022-05-05T12:49:45 EEST" name="beforeClass" finished-at="2022-05-05T12:49:45 EEST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5c7933ad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="checkApp()[pri:0, instance:example_tests.TestNGTestParam@3d1cfad4]" started-at="2022-05-05T12:49:45 EEST" name="checkApp" finished-at="2022-05-05T12:49:45 EEST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkApp -->
+        <test-method signature="parameterIntTest(int)[pri:0, instance:example_tests.TestNGTestParam@3d1cfad4]" started-at="2022-05-05T12:49:45 EEST" name="parameterIntTest" finished-at="2022-05-05T12:49:45 EEST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterIntTest -->
+      </class> <!-- example_tests.TestNGTestParam -->
+    </test> <!-- Test41 -->
+  </suite> <!-- Suite4 -->
+</testng-results>
